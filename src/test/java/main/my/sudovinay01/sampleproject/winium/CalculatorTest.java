@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class CalculatorTest {
     @BeforeTest
     public void beforeTest() {
-        System.out.println("Before test");
+        winiumUtils.checkDisplay();
     }
 
     @AfterTest
