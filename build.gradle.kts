@@ -10,10 +10,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    // https://mvnrepository.com/artifact/com.github.2gis.winium/winium-webdriver
+    implementation("com.github.2gis.winium:winium-webdriver:0.1.0-1")
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation("org.testng:testng:7.5.1")
 }
 
 tasks.test {
-    useJUnitPlatform()
+    useTestNG()
 }
