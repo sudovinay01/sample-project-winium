@@ -59,7 +59,7 @@ public class CalculatorTest {
         driver.findElement(By.id("equalButton")).click();
         String results = driver.findElement(By.id("CalculatorResults")).getAttribute("Name");
         System.out.println("Actual value = " + results
-                + "\nExpecting vaule = Display is " + num1 * num2);
+                + "\nExpecting value = Display is " + num1 * num2);
         assertEquals(results, "Display is " + num1 * num2);
     }
 }
